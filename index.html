@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Қыз Ұзату - Айгерім</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Фон с казахским орнаментом -->
+        <div class="background-pattern"></div>
+        
+        <div class="content">
+            <!-- Заголовок -->
+            <div class="header">
+                <h1 class="main-title">Қыз Ұзату</h1>
+                <h2 class="bride-name">Айгерім</h2>
+            </div>
+
+            <!-- Основная информация -->
+            <div class="main-info">
+                <div class="info-box">
+                    <div class="info-item">
+                        <span class="label">📅 Күні:</span>
+                        <span class="value">28 Шілде 2026</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">⏰ Уақыты:</span>
+                        <span class="value">17:00</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">📍 Орны:</span>
+                        <span class="value">Ақниет Мейрамханасы</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">🏛️ Қала:</span>
+                        <span class="value">Талдықорған</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Приглашение текст -->
+            <div class="invitation-text">
+                <p>Құрметті қонақтар!</p>
+                <p>Біз сіздерді ерекше рұқсат етіп, қыз ұзату салтына, яғни ұлттық дәстүрлі той-тойсының қашықарлысына шақырамыз.</p>
+                <p>Айгерім жаңа өмірге аттанар сәтінде, бұл аса ыстық және құшты сәттердің таңдығы болып қала бергенде сенемін.</p>
+                <p>Келіңіз, бәлкім, сіздің құттықтауыңыз және сегіндің ең сұлу туғдан өмір сүрдің таңдығы болып қала берді.</p>
+                <p style="margin-top: 25px; font-weight: bold;">Сіздің келуіңізге өте ризамыз!</p>
+            </div>
+
+            <!-- Календарь -->
+            <div class="calendar-section">
+                <h3>Күнтізбе</h3>
+                <div class="calendar">
+                    <div class="calendar-header">
+                        <button class="prev-month" onclick="previousMonth()">←</button>
+                        <h4 id="currentMonth">Шілде 2026</h4>
+                        <button class="next-month" onclick="nextMonth()">→</button>
+                    </div>
+                    <table class="calendar-table">
+                        <thead>
+                            <tr>
+                                <th>Дс</th>
+                                <th>Сс</th>
+                                <th>Сәр</th>
+                                <th>Бс</th>
+                                <th>Жм</th>
+                                <th>Сб</th>
+                                <th>Жс</th>
+                            </tr>
+                        </thead>
+                        <tbody id="calendarBody">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Счетчик времени (Countdown) -->
+            <div class="countdown-section">
+                <h3>Қажет ет аладын:</h3>
+                <div class="countdown">
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="days">0</div>
+                        <div class="countdown-label">Күн</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="hours">0</div>
+                        <div class="countdown-label">Сағат</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="minutes">0</div>
+                        <div class="countdown-label">Минут</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="seconds">0</div>
+                        <div class="countdown-label">Секунд</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Опрос -->
+            <div class="poll-section">
+                <h3>Келе аласыз ба?</h3>
+                <div class="poll-buttons">
+                    <button class="poll-btn yes-btn" onclick="voteSure()">✓ Келемін</button>
+                    <button class="poll-btn no-btn" onclick="voteNo()">✗ Келмеймін</button>
+                </div>
+                <div class="poll-results">
+                    <p id="pollMessage" class="poll-message"></p>
+                </div>
+            </div>
+
+            <!-- Контакты -->
+            <div class="contacts-section">
+                <h3>Біздің барлық деректері</h3>
+                <p>Кез-келген сұрақ болса, өтінеме, хабарласыңыз:</p>
+                <p class="contact-info">📱 Ағалары: +7 (___) ___-__-__</p>
+                <p class="contact-info">📱 Қарындасы: +7 (___) ___-__-__</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
